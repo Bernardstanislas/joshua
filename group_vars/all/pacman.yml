@@ -17,3 +17,24 @@ pacman_packages:
   - yubikey-personalization
   - xclip
   - inotify-tools
+  - pulseaudio
+  - pulseaudio-alsa
+  - pavucontrol
+  - alsa-firmware
+  - alsa-lib
+  - alsa-plugins
+  - alsa-utils
+  - gstreamer
+  - xfce
+  - xfce-goodies
+  - xfce4-pulseaudio-plugin
+  - sddm
+  - tlp
+  - pulseaudio-bluetooth
+  - bluez
+  - bluez-libs
+  - bluez-utils
+  - blueberry
+  - unrar
+  - zip
+  - unzip

@@ -1,0 +1,6 @@
+---
+- name: Enable service
+  service:
+    name: "{{ item }}"
+    enabled: yes
+  with_items: "{{ base-services }}"
