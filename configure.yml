@@ -9,5 +9,6 @@
     - role: betterlockscreen
     - role: dual-screen
     - role: ssh-key
-    #    - role: google-drive
+    - role: google-drive
     - role: vim-arrow-keys
+    - role: dotfiles

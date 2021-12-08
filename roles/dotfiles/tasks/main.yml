@@ -1,0 +1,12 @@
+---
+- name: Create .gitconfig
+  get_url:
+    url: https://raw.githubusercontent.com/bernardstanislas/dotfiles/master/.gitconfig
+    dest: "/home/{{ ansible_user }}/.gitconfig"
+    mode: 0644
+
+- name: Create xfce panel profile
+  get_url:
+    url: https://raw.githubusercontent.com/bernardstanislas/dotfiles/master/.local/share/xfce4-panel-profiles/Joshua.tar.bz2
+    dest: "/home/{{ ansible_user }}/.local/share/xfce4-panel-profiles/Joshua.tar.bz2"
+    mode: 0644

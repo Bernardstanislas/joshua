@@ -1,5 +1,7 @@
 ---
 pacman_packages:
+  - git
+  - base-devel
   - visual-studio-code-bin
   - vagrant
   - brave-bin
