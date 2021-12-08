@@ -1,7 +1,10 @@
 ---
 pacman_packages:
-  - git
+  - base
   - base-devel
+  - fdisk
+  - vim
+  - git
   - visual-studio-code-bin
   - vagrant
   - brave-bin
