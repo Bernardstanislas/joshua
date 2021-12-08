@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="usb", ENV{ID_MODEL_ID}="0141", RUN+="/usr/local/bin/keyboard-hotplug"

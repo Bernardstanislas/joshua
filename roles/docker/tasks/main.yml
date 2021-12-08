@@ -1,0 +1,11 @@
+---
+- name: Install docker package
+  pacman:
+    name: docker
+
+- name: Add current user to the docker group
+  become: yes
+  user:
+    name: "{{ ansible_user }}"
+    group: docker
+    append: yes

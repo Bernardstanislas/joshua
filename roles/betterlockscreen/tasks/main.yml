@@ -1,0 +1,15 @@
+---
+- name: Create service for betterlockscreen
+  become: yes
+  template:
+    src: templates/betterlockscreen.service.j2
+    dest: /usr/lib/systemd/system/betterlockscreen.service
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Enable betterlockscreen service
+  become: yes
+  service:
+    name: betterlockscreen
+    enabled: yes

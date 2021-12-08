@@ -1,0 +1,13 @@
+---
+- hosts: all
+  connection: local
+  roles:
+    - role: install-packages
+    - role: magicmouse
+    - role: docker
+    - role: nvm
+    - role: betterlockscreen
+    - role: dual-screen
+    - role: ssh-key
+    #    - role: google-drive
+    - role: vim-arrow-keys

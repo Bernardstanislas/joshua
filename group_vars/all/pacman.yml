@@ -1,0 +1,17 @@
+---
+pacman_packages:
+  - visual-studio-code-bin
+  - vagrant
+  - brave-bin
+  - virtualbox
+  - nfs-utils
+  - ttf-jetbrains-mono
+  - gnome-keyring
+  - libsecret
+  - gnupg
+  - pcsclite
+  - ccid
+  - hopenpgp-tools
+  - yubikey-personalization
+  - xclip
+  - inotify-tools

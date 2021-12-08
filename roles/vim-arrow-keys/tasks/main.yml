@@ -1,0 +1,10 @@
+---
+- name: Use capslock as a modifier for level3
+  become: yes
+  template:
+    src: templates/Xmodmap
+    dest: "/home/{{ ansible_user }}/.Xmodmap"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: 0644
+  notify: load xmodmap

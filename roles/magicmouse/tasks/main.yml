@@ -1,0 +1,9 @@
+---
+- name: Configure modprobe for Apple magicouse to disable middle button
+  become: yes
+  template:
+    src: templates/hid_magicmouse.conf
+    dest: /etc/modprobe.d/hid_magicmouse.conf
+    owner: root
+    group: root
+    mode: 0644

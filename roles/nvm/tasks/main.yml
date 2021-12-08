@@ -1,0 +1,11 @@
+---
+- name: Install nvm
+  kewlfft.aur.aur:
+    use: yay
+    name: nvm
+
+- name: Add nvm sourcing to bashrc
+  lineinfile:
+    path: "~/.bashrc"
+    regexp: "^source /usr/share/nvm"
+    line: "source /usr/share/nvm/init-nvm.sh"

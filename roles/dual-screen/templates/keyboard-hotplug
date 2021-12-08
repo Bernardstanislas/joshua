@@ -1,0 +1,12 @@
+#!/bin/bash
+export DISPLAY=:0.0
+ 
+function connect(){
+  setxkbmap -layout fr
+}
+  
+function disconnect(){
+  setxkbmap -layout us
+}
+   
+usb-devices | grep "ProdID=0141" > /dev/null 2> /home/stan/keyboard.log && connect || disconnect

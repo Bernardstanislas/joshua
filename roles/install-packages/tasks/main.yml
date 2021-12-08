@@ -1,0 +1,16 @@
+---
+- name: Install pacman packages
+  become: yes
+  pacman:
+    name: "{{ item.name | default(item) }}"
+    state: "{{ item.state | default('present') }}"
+    version: "{{ item.version | default(omit) }}"
+  with_items: "{{ pacman_packages }}"
+
+- name: Install yay packages
+  kewlfft.aur.aur:
+    use: yay
+    name: "{{ item.name | default(item) }}"
+    state: "{{ item.state | default('present') }}"
+    version: "{{ item.version | default(omit) }}"
+  with_items: "{{ yay_packages }}"

@@ -1,0 +1,17 @@
+---
+- name: Create the folder
+  file:
+    state: directory
+    path: "/home/{{ ansible_user }}/google-drive"
+
+- name: Enable the service
+  service:
+    name: grive
+    enabled: yes
+    args: "google\x2ddrive"
+
+- name: Start the service
+  service:
+    name: grive
+    state: started
+    args: "google\x2ddrive"

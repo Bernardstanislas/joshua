@@ -1,0 +1,4 @@
+---
+- name: load xmodmap
+  become: yes
+  command: "/usr/bin/xmodmap /home/{{ ansible_user }}/.Xmodmap"

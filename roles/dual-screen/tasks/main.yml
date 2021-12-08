@@ -1,0 +1,40 @@
+---
+- name: Add udev rule to check for screen hotplug
+  become: yes
+  template:
+    src: templates/95-monitor-hotplug.rules
+    dest: /etc/udev/rules.d/95-monitor-hotplug.rules
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - restart udev
+
+- name: Add script to handle screen hotplug
+  become: yes
+  template:
+    src: templates/screen-hotplug
+    dest: /usr/local/bin/screen-hotplug
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Add udev rule to check for keyboard hotplug
+  become: yes
+  template:
+    src: templates/90-keyboard-hotplug.rules
+    dest: /etc/udev/rules.d/90-keyboard-hotplug.rules
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - restart udev
+
+- name: Add script to handle keyboard hotplug
+  become: yes
+  template:
+    src: templates/keyboard-hotplug
+    dest: /usr/local/bin/keyboard-hotplug
+    owner: root
+    group: root
+    mode: 0755

@@ -1,0 +1,4 @@
+---
+- name: restart udev
+  become: yes
+  command: /usr/bin/udevadm control --reload
