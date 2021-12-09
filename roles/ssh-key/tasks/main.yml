@@ -1,4 +1,10 @@
 ---
+- name: Create .ssh directory
+  file:
+    path: /home/{{ ansible_user }}/.ssh
+    state: directory
+    mode: 0755
+
 - name: Copy private ssh key
   become: yes
   template:
