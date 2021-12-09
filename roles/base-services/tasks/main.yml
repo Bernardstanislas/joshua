@@ -1,5 +1,6 @@
 ---
 - name: Enable service
+  become: yes
   service:
     name: "{{ item }}"
     enabled: yes
