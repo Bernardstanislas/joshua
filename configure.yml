@@ -10,5 +10,6 @@
     - role: ssh-key
     - role: google-drive
     - role: vim-arrow-keys
+    - role: base-services
     - role: dotfiles
     - role: betterlockscreen
