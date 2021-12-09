@@ -12,4 +12,5 @@
     - role: vim-arrow-keys
     - role: base-services
     - role: dotfiles
+    - role: xfce
     - role: betterlockscreen

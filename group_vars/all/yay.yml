@@ -9,3 +9,4 @@ yay_packages:
   - mattermost-desktop
   - yubikey-manager
   - grive
+  - xfce4-panel-profiles

@@ -1,4 +1,13 @@
 ---
+- name: Create xfce panel profiles directory
+  become: yes
+  file:
+    path: "/home/{{ ansible_user }}/.local/share/xfce4-panel-profiles"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    state: directory
+    mode: 0755
+
 - name: Create .gitconfig
   get_url:
     url: https://raw.githubusercontent.com/bernardstanislas/dotfiles/master/.gitconfig

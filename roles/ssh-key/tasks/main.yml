@@ -24,3 +24,8 @@
     group: "{{ ansible_user }}"
     mode: 0600
   notify: add key to agent
+
+- name: Evaluating the authentication agent & adding the key...
+  shell: |
+    eval "$(ssh-agent)"
+    ssh-add ~/.ssh/id_rsa
