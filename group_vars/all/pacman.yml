@@ -2,12 +2,9 @@
 pacman_packages:
   - base
   - base-devel
-  - fdisk
   - vim
   - git
-  - visual-studio-code-bin
   - vagrant
-  - brave-bin
   - virtualbox
   - nfs-utils
   - ttf-jetbrains-mono

@@ -2,6 +2,8 @@
 yay_packages:
   - whatsapp-nativefier
   - 1password
+  - visual-studio-code-bin
+  - brave-bin
   - insomnia-bin
   - discord
   - mattermost-desktop
