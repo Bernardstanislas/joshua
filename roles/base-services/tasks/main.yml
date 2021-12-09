@@ -3,4 +3,5 @@
   service:
     name: "{{ item }}"
     enabled: yes
-  with_items: "{{ base-services }}"
+    state: started
+  with_items: "{{ base_services }}"
