@@ -41,3 +41,9 @@ pacman_packages:
   - xdg-user-dirs
   - ntp
   - xorg-xinput
+  - mpc
+  - mpd
+  - scrot
+  - unclutter
+  - xsel
+  - slock

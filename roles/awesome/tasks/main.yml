@@ -5,6 +5,18 @@
     state: directory
     mode: 0755
 
+- name: Clone the themes repository
+  git:
+    repo: https://github.com/lcpz/awesome-copycats.git
+    dest: "/home/{{ ansible_user }}/.config/awesome/awesome-copycat"
+    depth: 1
+
+- name: Link the themes directory
+  file:
+    src: "/home/{{ ansible_user }}/.config/awesome/awesome-copycat/themes"
+    dest: "/home/{{ ansible_user }}/.config/awesome/themes"
+    state: link
+
 - name: Setup config
   copy:
     src: templates/rc.lua
@@ -12,7 +24,7 @@
 
 - name: Setup theme
   copy:
-    src: templates/rc.lua
+    src: templates/theme.lua
     dest: "/home/{{ ansible_user }}/.config/awesome/theme.lua"
 
 - name: Setup xinitrc
