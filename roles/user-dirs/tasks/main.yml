@@ -1,0 +1,3 @@
+---
+- name: Create user dirs
+  command: /usr/bin/xdg-user-dirs-update

@@ -6,7 +6,12 @@ yay_packages:
   - brave-bin
   - insomnia-bin
   - discord
-  - mattermost-desktop
+  - mattermost
   - yubikey-manager
   - grive
   - xfce4-panel-profiles
+  - betterlockscreen
+  - awesome-gnome
+  - xinit-xsession
+
+  # https://awesomewm.org/apidoc/documentation/07-my-first-awesome.md.html

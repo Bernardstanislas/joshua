@@ -4,7 +4,7 @@ Before=sleep.target
 Before=suspend.target
 
 [Service]
-User="{{ ansible_user }}"
+User={{ ansible_user }}
 Type=simple
 Environment=DISPLAY=:0
 ExecStart=/usr/bin/betterlockscreen --lock

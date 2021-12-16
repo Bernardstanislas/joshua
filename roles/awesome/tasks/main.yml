@@ -1,0 +1,22 @@
+---
+- name: Create config directory
+  file:
+    path: "/home/{{ ansible_user }}/.config/awesome"
+    state: directory
+    mode: 0755
+
+- name: Setup config
+  copy:
+    src: templates/rc.lua
+    dest: "/home/{{ ansible_user }}/.config/awesome/rc.lua"
+
+- name: Setup theme
+  copy:
+    src: templates/rc.lua
+    dest: "/home/{{ ansible_user }}/.config/awesome/theme.lua"
+
+- name: Setup xinitrc
+  copy:
+    src: templates/xinitrc
+    dest: "/home/{{ ansible_user }}/.xinitrc"
+    mode: 0755

@@ -35,3 +35,9 @@ pacman_packages:
   - unrar
   - zip
   - unzip
+  - awesome
+  - dmenu
+  - plank
+  - xdg-user-dirs
+  - ntp
+  - xorg-xinput
