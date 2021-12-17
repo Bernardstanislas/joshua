@@ -53,3 +53,5 @@ pacman_packages:
   - blueman
   - ttf-roboto
   - ttf-roboto-mono
+  - networkmanager
+  - network-manager-applet

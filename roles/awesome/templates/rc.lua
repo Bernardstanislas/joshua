@@ -68,7 +68,7 @@ local function run_once(cmd_arr)
     end
 end
 
-run_once({ "urxvtd", "unclutter -root", "blueman-applet &" }) -- comma-separated entries
+run_once({ "urxvtd", "unclutter -root", "blueman-applet &", "nm-applet &" }) -- comma-separated entries
 
 -- This function implements the XDG autostart specification
 --[[
