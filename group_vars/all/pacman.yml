@@ -47,3 +47,4 @@ pacman_packages:
   - unclutter
   - xsel
   - slock
+  - rofi
