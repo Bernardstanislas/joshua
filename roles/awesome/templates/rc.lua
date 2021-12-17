@@ -100,36 +100,36 @@ local themes = {
 local chosen_theme = themes[2]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "xfce4-terminal"
+local terminal     = "alacritty"
 local vi_focus     = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true  -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
 local editor       = os.getenv("EDITOR") or "code"
 local browser      = "brave"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "1", "2", "3", "4", "5" }
+awful.util.tagnames = { "Claude", "Fred", "Eish", "Enora", "Francis" }
 awful.layout.layouts = {
     awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
+    -- awful.layout.suit.tile.left,
+    -- awful.layout.suit.tile.bottom,
+    -- awful.layout.suit.tile.top,
     awful.layout.suit.floating,
-    --awful.layout.suit.fair,
+    awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
     --awful.layout.suit.spiral,
     --awful.layout.suit.spiral.dwindle,
     --awful.layout.suit.max,
     --awful.layout.suit.max.fullscreen,
-    --awful.layout.suit.magnifier,
+    -- awful.layout.suit.magnifier,
     --awful.layout.suit.corner.nw,
     --awful.layout.suit.corner.ne,
     --awful.layout.suit.corner.sw,
     --awful.layout.suit.corner.se,
-    --lain.layout.cascade,
+    -- lain.layout.cascade,
     --lain.layout.cascade.tile,
     --lain.layout.centerwork,
     --lain.layout.centerwork.horizontal,
-    --lain.layout.termfair,
+    -- lain.layout.termfair,
     --lain.layout.termfair.center
 }
 
@@ -542,7 +542,7 @@ globalkeys = mytable.join(
     -- rofi
     awful.key({ modkey }, "x", function ()
             os.execute(string.format("rofi -show %s -theme %s",
-            'run', 'default'))
+            'run', 'paper-float'))
         end,
         {description = "show rofi", group = "launcher"})
     --]]

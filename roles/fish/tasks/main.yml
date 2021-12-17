@@ -1,0 +1,5 @@
+---
+- name: Create bashrc
+  template:
+    src: templates/.bashrc
+    dest: "/home/{{ ansible_user }}/.bashrc"

@@ -48,3 +48,8 @@ pacman_packages:
   - xsel
   - slock
   - rofi
+  - fish
+  - alacritty
+  - blueman
+  - ttf-roboto
+  - ttf-roboto-mono

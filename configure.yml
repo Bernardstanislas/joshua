@@ -16,3 +16,5 @@
     - role: betterlockscreen
     - role: user-dirs
     - role: awesome
+    - role: fish
+    - role: alacritty

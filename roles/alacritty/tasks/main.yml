@@ -1,0 +1,5 @@
+---
+- name: Create Alacritty config
+  template:
+    src: templates/alacritty.yml
+    dest: "/home/{{ ansible_user }}/.config/alacritty.yml"
