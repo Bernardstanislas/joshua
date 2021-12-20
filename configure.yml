@@ -13,7 +13,6 @@
     - role: base-services
     - role: dotfiles
     - role: xfce
-    - role: betterlockscreen
     - role: user-dirs
     - role: awesome
     - role: fish

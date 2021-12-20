@@ -10,9 +10,10 @@ yay_packages:
   - yubikey-manager
   - grive
   - xfce4-panel-profiles
-  - betterlockscreen
   - awesome-gnome
   - xinit-xsession
   - lain-git
   - awesome-freedesktop-git
   - pa-applet-git
+  - i3lock-fancy
+  - xss-lock-git
