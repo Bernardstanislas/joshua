@@ -1,0 +1,9 @@
+---
+- name: Create systemd power management config file
+  become: yes
+  template:
+    src: templates/logind.conf
+    dest: "/etc/systemd/logind.conf"
+    owner: root
+    group: root
+    mode: 0644
