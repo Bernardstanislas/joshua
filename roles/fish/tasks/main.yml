@@ -3,3 +3,8 @@
   template:
     src: templates/.bashrc
     dest: "/home/{{ ansible_user }}/.bashrc"
+
+- name: Create config file
+  template:
+    src: templates/config.fish
+    dest: "/home/{{ ansible_user }}/.config/fish/config.fish"

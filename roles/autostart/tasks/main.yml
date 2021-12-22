@@ -1,0 +1,5 @@
+- name: Setup xprofile
+  copy:
+    src: templates/xprofile
+    dest: "/home/{{ ansible_user }}/.xprofile"
+    mode: 0755

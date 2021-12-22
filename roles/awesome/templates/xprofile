@@ -1,6 +1,0 @@
-xrandr --dpi 144 &
-blueman-applet &
-nm-applet &
-pa-applet &
-xss-lock i3lock-fancy -p &
-xinput set-prop "STAR0001:00 093A:0255 Touchpad" "libinput Tapping Enabled" 1 &

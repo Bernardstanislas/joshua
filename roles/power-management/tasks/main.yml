@@ -7,3 +7,17 @@
     owner: root
     group: root
     mode: 0644
+
+- name: Create lock service file
+  become: yes
+  template:
+    src: templates/suspend@.service
+    dest: "/etc/systemd/system/suspend@.service"
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Enable lock service
+  service:
+    name: "suspend@{{ ansible_user }}"
+    state: enabled

@@ -17,3 +17,5 @@ yay_packages:
   - pa-applet-git
   - i3lock-fancy
   - xss-lock-git
+  - chrome-gnome-shell
+  - gnome-tweak

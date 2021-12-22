@@ -18,3 +18,5 @@
     - role: fish
     - role: alacritty
     - role: power-management
+    - role: hotkeys
+    - role: autostart
