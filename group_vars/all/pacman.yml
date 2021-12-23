@@ -41,6 +41,7 @@ pacman_packages:
   - bluez-libs
   - gnome-keyring
   - networkmanager
+  - arc-gtk-theme
   - baobab
   - evince
   - file-roller

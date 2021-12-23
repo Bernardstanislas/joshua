@@ -13,3 +13,5 @@ yay_packages:
   - chrome-gnome-shell
   - gnome-tweaks
   - gnome-terminal-transparency
+  - ulauncher
+  - jrnl
