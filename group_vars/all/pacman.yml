@@ -9,7 +9,6 @@ pacman_packages:
   - virtualbox
   - nfs-utils
   - ttf-jetbrains-mono
-  - gnome-keyring
   - libsecret
   - gnupg
   - pcsclite
@@ -19,43 +18,63 @@ pacman_packages:
   - xclip
   - pulseaudio
   - pulseaudio-alsa
+  - pulseaudio-bluetooth
   - alsa-firmware
   - alsa-lib
   - alsa-plugins
   - alsa-utils
   - gstreamer
-  - xfce4
-  - xfce4-goodies
   - sddm
   - tlp
-  - pulseaudio-bluetooth
-  - bluez
-  - bluez-libs
-  - bluez-utils
-  - blueberry
   - unrar
   - zip
   - unzip
-  - awesome
-  - dmenu
-  - plank
   - xdg-user-dirs
   - ntp
   - xorg-xinput
-  - mpc
-  - mpd
-  - scrot
-  - unclutter
   - xsel
   - slock
-  - rofi
   - fish
-  - alacritty
-  - blueman
   - ttf-roboto
   - ttf-roboto-mono
+  - bluez
+  - bluez-libs
+  - gnome-keyring
   - networkmanager
-  - network-manager-applet
-  - gnome
-  - cutefish
+  - baobab
+  - evince
+  - file-roller
+  - gnome-backgrounds
+  - gnome-characters
+  - gnome-color-manager
+  - gnome-control-center
+  - gnome-disk-utility
+  - gnome-font-viewer
+  - gnome-keyring
+  - gnome-menus
+  - gnome-screenshot
+  - gnome-session
+  - gnome-settings-daemon
+  - gnome-shell
+  - gnome-shell-extensions
+  - gnome-system-monitor
+  - gnome-user-docs
+  - gnome-video-effects
+  - grilo-plugins
+  - gvfs
+  - gvfs-afc
+  - gvfs-goa
+  - gvfs-google
+  - gvfs-gphoto2
+  - gvfs-mtp
+  - gvfs-nfs
+  - gvfs-smb
+  - mutter
+  - nautilus
+  - sushi
+  - tracker
+  - tracker-miners
+  - tracker3-miners
+  - vino
+  - xdg-user-dirs-gtk
   - sxhkd

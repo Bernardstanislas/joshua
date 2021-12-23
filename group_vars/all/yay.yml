@@ -6,16 +6,10 @@ yay_packages:
   - brave-bin
   - insomnia-bin
   - discord
-  - mattermost
+  - mattermost-desktop-bin
   - yubikey-manager
-  - grive
-  - xfce4-panel-profiles
-  - awesome-gnome
-  - xinit-xsession
-  - lain-git
-  - awesome-freedesktop-git
-  - pa-applet-git
   - i3lock-fancy
   - xss-lock-git
   - chrome-gnome-shell
-  - gnome-tweak
+  - gnome-tweaks
+  - gnome-terminal-transparency

@@ -20,4 +20,4 @@
 - name: Enable lock service
   service:
     name: "suspend@{{ ansible_user }}"
-    state: enabled
+    enabled: yes

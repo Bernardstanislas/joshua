@@ -1,5 +1,0 @@
----
-- name: Create the folder
-  file:
-    state: directory
-    path: "/home/{{ ansible_user }}/google-drive"
