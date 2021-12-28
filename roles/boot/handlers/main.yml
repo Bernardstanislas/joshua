@@ -1,0 +1,8 @@
+---
+- name: run mkinitcpio
+  become: yes
+  shell: mkinitcpio -P
+
+- name: regenerate grub
+  become: yes
+  shell: grub-mkconfig -o /boot/grub/grub.cfg

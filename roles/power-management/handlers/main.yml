@@ -1,0 +1,6 @@
+---
+- name: enable lock service
+  become: yes
+  service:
+    name: "suspend@{{ ansible_user }}"
+    enabled: yes

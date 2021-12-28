@@ -7,10 +7,7 @@
     owner: root
     group: root
     mode: 0644
-
-- name: Run mkinitcpio
-  become: yes
-  shell: mkinitcpio -P
+  notify: run mkinitcpio
 
 - name: Create the grub default config file
   become: yes
@@ -20,7 +17,4 @@
     owner: root
     group: root
     mode: 0644
-
-- name: Generate the grub config file
-  become: yes
-  shell: grub-mkconfig -o /boot/grub/grub.cfg
+  notify: regenerate grub

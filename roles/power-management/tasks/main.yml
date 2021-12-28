@@ -8,6 +8,15 @@
     group: root
     mode: 0644
 
+- name: Create systemd sleep config file
+  become: yes
+  template:
+    src: templates/sleep.conf
+    dest: "/etc/systemd/sleep.conf"
+    owner: root
+    group: root
+    mode: 0644
+
 - name: Create lock service file
   become: yes
   template:
@@ -16,8 +25,4 @@
     owner: root
     group: root
     mode: 0644
-
-- name: Enable lock service
-  service:
-    name: "suspend@{{ ansible_user }}"
-    enabled: yes
+  notify: enable lock service
