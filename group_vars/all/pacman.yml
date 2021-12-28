@@ -79,3 +79,5 @@ pacman_packages:
   - vino
   - xdg-user-dirs-gtk
   - sxhkd
+  - python-pip
+  - gimp

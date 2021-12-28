@@ -16,3 +16,4 @@
     - role: power-management
     - role: hotkeys
     - role: autostart
+    - role: sddm

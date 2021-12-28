@@ -1,0 +1,26 @@
+---
+- name: Create the themes folder if not exists
+  become: yes
+  file:
+    path: /usr/share/sddm/themes
+    state: directory
+    mode: 0755
+    owner: root
+    group: root
+
+- name: Clone the Sugar Candy theme
+  become: yes
+  git:
+    repo: "{{ sugar_candy_theme_repo }}"
+    dest: /usr/share/sddm/themes/sugar-candy
+    update: no
+    depth: 1
+
+- name: Create the sddm.conf file
+  become: yes
+  template:
+    src: templates/sddm.conf
+    dest: /etc/sddm.conf
+    owner: root
+    group: root
+    mode: 0644
