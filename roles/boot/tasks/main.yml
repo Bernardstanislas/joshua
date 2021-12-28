@@ -1,0 +1,26 @@
+---
+- name: Create the mkinitcpio.conf file
+  become: yes
+  template:
+    src: templates/mkinitcpio.conf
+    dest: /etc/mkinitcpio.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Run mkinitcpio
+  become: yes
+  shell: mkinitcpio -P
+
+- name: Create the grub default config file
+  become: yes
+  template:
+    src: templates/grub
+    dest: /etc/default/grub
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Generate the grub config file
+  become: yes
+  shell: grub-mkconfig -o /boot/grub/grub.cfg

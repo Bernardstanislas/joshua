@@ -17,3 +17,4 @@
     - role: hotkeys
     - role: autostart
     - role: sddm
+    - role: boot
