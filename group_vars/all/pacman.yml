@@ -81,3 +81,4 @@ pacman_packages:
   - sxhkd
   - python-pip
   - gimp
+  - docker-compose

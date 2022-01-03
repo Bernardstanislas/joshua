@@ -1,11 +1,10 @@
 ---
-- name: Install nvm
-  kewlfft.aur.aur:
-    use: yay
-    name: nvm
+- name: Install nvm fish support
+  shell:
+    cmd: fisher install edc/bass
+    executable: /usr/bin/fish
 
-- name: Add nvm sourcing to bashrc
-  lineinfile:
-    path: "~/.bashrc"
-    regexp: "^source /usr/share/nvm"
-    line: "source /usr/share/nvm/init-nvm.sh"
+- name: Add nvm function
+  template:
+    src: templates/nvm.fish
+    dest: "/home/{{ ansible_user }}/.config/fish/functions/nvm.fish"

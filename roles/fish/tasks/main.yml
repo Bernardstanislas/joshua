@@ -1,9 +1,4 @@
 ---
-- name: Create bashrc
-  template:
-    src: templates/.bashrc
-    dest: "/home/{{ ansible_user }}/.bashrc"
-
 - name: Create config file
   template:
     src: templates/config.fish
