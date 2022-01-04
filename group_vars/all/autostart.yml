@@ -1,11 +1,5 @@
 ---
 autostart_commands:
-  - name: Xrandr dpi
-    command: xrandr --dpi 144
-    filename: xrandr
   - name: Xss lock
     command: xss-lock i3lock-fancy -p
     filename: xss-lock
-  - name: Hotkeys
-    command: sxhkd -c ~/.config/sxhkd/sxhkdrc
-    filename: sxhkd

@@ -82,3 +82,5 @@ pacman_packages:
   - python-pip
   - gimp
   - docker-compose
+  - tldr
+  - bluez-utils
