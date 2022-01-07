@@ -2,9 +2,16 @@
 - name: Use capslock as a modifier for level3
   become: yes
   template:
-    src: templates/Xmodmap
-    dest: "/home/{{ ansible_user }}/.Xmodmap"
+    src: templates/xmodmap
+    dest: "/home/{{ ansible_user }}/.config/.xmodmap"
     owner: "{{ ansible_user }}"
     group: "{{ ansible_user }}"
     mode: 0644
   notify: load xmodmap
+
+- name: Run xmodmap in /etc/profile
+  become: yes
+  template:
+    src: templates/profile.j2
+    dest: "/etc/profile"
+    mode: 0644
