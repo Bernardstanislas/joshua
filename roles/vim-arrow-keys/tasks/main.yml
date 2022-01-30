@@ -1,15 +1,6 @@
 ---
-- name: Setup xkb layout configuration
-  become: yes
+- name: Setup xmodmap config
   template:
-    src: us
-    backup: yes
-    dest: /usr/share/X11/xkb/symbols/us
-    mode: 0644
-
-- name: Setup configuration file
-  become: yes
-  template:
-    src: 00-keyboard.conf
-    dest: /etc/X11/xorg.conf.d/00-keyboard.conf
+    src: xmodmap
+    dest: "/home/{{ ansible_user }}/.xmodmap"
     mode: 0644

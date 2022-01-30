@@ -7,14 +7,10 @@
     - role: docker
     - role: fish
     - role: nvm
-    # - role: dual-screen
     - role: ssh-key
     - role: fonts
     - role: dotfiles
     - role: vim-arrow-keys
-    # - role: base-services
-    # - role: user-dirs
-    # - role: power-management
     # - role: autostart
     # - role: sddm
     # - role: boot
