@@ -1,5 +1,16 @@
 ---
+- name: Set fish as user shell
+  become: yes
+  user:
+    name: "{{ ansible_user }}"
+    shell: /usr/bin/fish
+
 - name: Create config file
   template:
     src: templates/config.fish
     dest: "/home/{{ ansible_user }}/.config/fish/config.fish"
+
+- name: Install fisher
+  shell:
+    cmd: "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+    executable: /usr/bin/fish

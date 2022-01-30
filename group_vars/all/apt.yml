@@ -1,0 +1,27 @@
+---
+apt_keys:
+  - https://download.docker.com/linux/ubuntu/gpg
+
+apt_repositories:
+  - deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+
+apt_packages:
+  - make
+  - vim
+  - vagrant
+  - gnome-tweaks
+  - virtualbox
+  - libnfs-utils
+  - gnupg
+  - xclip
+  - unrar-free
+  - fonts-roboto
+  - python3-pip
+  - docker-compose
+  - gimp
+  - tldr
+  - docker-ce
+  - docker-ce-cli
+  - containerd.io
+  - fish
+  - autojump

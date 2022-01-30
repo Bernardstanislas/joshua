@@ -19,3 +19,15 @@ yay_packages:
   - notion-app-enhanced
   - nvm
   - act
+
+snap_packages:
+  - code
+  - whatsapp-for-linux
+  - 1password
+  - brave
+  - insomnia
+  - okular
+  - discord
+  - mattermost-desktop
+  - olivia
+  - notion-snap

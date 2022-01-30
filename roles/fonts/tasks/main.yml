@@ -1,0 +1,18 @@
+---
+- name: Create Jetbrains mono fonts directory
+  become: yes
+  file:
+    path: /usr/share/fonts/truetype/jetbrains-mono
+    state: directory
+    mode: 0755
+
+- name: Install Jetbrains mono
+  become: yes
+  unarchive:
+    src: https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip
+    creates: /usr/share/fonts/truetype/jetbrains-mono/JetBrainsMono-Regular.ttf
+    dest: /usr/share/fonts/truetype/jetbrains-mono
+    remote_src: yes
+    include: fonts/ttf/*.ttf
+    extra_opts:
+      - -j

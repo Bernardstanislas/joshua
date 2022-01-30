@@ -1,9 +1,4 @@
 ---
-- name: Install docker package
-  become: yes
-  pacman:
-    name: docker
-
 - name: Add current user to the docker group
   become: yes
   user:

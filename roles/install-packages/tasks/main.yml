@@ -1,16 +1,25 @@
 ---
-- name: Install pacman packages
+- name: Add Apt GPG keys
   become: yes
-  pacman:
-    name: "{{ item.name | default(item) }}"
-    state: "{{ item.state | default('present') }}"
-    version: "{{ item.version | default(omit) }}"
-  with_items: "{{ pacman_packages }}"
+  apt_key:
+    url: "{{ item }}"
+  with_items: "{{ apt_keys }}"
 
-- name: Install yay packages
-  kewlfft.aur.aur:
-    use: yay
+- name: Add repositories
+  become: yes
+  apt_repository:
+    repo: "{{ item }}"
+  with_items: "{{ apt_repositories }}"
+
+- name: Install aptitude packages
+  become: yes
+  apt:
     name: "{{ item.name | default(item) }}"
     state: "{{ item.state | default('present') }}"
     version: "{{ item.version | default(omit) }}"
-  with_items: "{{ yay_packages }}"
+  with_items: "{{ apt_packages }}"
+
+- name: Install snap packages
+  become: yes
+  snap:
+    name: "{{ snap_packages }}"

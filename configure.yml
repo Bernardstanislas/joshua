@@ -5,15 +5,16 @@
     - role: install-packages
     - role: magicmouse
     - role: docker
-    - role: nvm
-    - role: dual-screen
-    - role: ssh-key
-    - role: vim-arrow-keys
-    - role: base-services
-    - role: dotfiles
-    - role: user-dirs
     - role: fish
-    - role: power-management
-    - role: autostart
-    - role: sddm
-    - role: boot
+    - role: nvm
+    # - role: dual-screen
+    - role: ssh-key
+    - role: fonts
+    - role: dotfiles
+    - role: vim-arrow-keys
+    # - role: base-services
+    # - role: user-dirs
+    # - role: power-management
+    # - role: autostart
+    # - role: sddm
+    # - role: boot
