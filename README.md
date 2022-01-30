@@ -1,6 +1,6 @@
 # Joshua provisioning
 
-- `bash prepare.sh`
+- `make prepare`
 - `make configure`
 
 ## Manual tasks
