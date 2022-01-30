@@ -1,5 +1,4 @@
 ---
 base_services:
   - sddm
-  - tlp
   - bluetooth

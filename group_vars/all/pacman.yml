@@ -26,7 +26,6 @@ pacman_packages:
   - alsa-utils
   - gstreamer
   - sddm
-  - tlp
   - unrar
   - zip
   - unzip
